@@ -1,0 +1,218 @@
+
+/* ================= HEADER ================= */
+/* Mengatur tampilan header dan judul utama */
+header {
+  text-align: center;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  background: linear-gradient(to right, rgb(51, 60, 61), rgb(86, 77, 87)); 
+  margin: 5px;
+  padding: 250px;
+  border-radius: 50px;
+  color: rgb(244, 255, 28);
+}
+
+/* ================= PROFILE ================= */
+/* Mengatur posisi dan tampilan foto profil */
+.profile {
+  text-align: center;
+}
+.profil-image {
+  border-radius: 50%; /* Membuat foto profil bulat */
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* ================= GALERI PROYEK ================= */
+/* Judul galeri proyek */
+.h {
+  text-align: center;
+}
+/* Gambar galeri berbaris horizontal dan sudut tumpul */
+.f {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 30px;
+}
+.f img {
+  width: 350px;
+  height: auto;
+  border-radius: 20px; /* Membuat sudut gambar tumpul */
+}
+.f figcaption {
+  text-align: center;
+  padding: 30px;
+  width: 95%;
+  padding: 10px;
+  background: #e5c40c;
+  color: #050505;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "titillium web", sans-serif;
+}
+
+/* ================= FOOTER ================= */
+/* Mengatur posisi teks footer di tengah */
+footer {
+  text-align: center;
+  background-color: deepskyblue;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+/* ================= ABOUT ME ================= */
+/* Mengatur tampilan section tentang saya */
+.am {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top : 5px;
+  margin-bottom: 5px;
+  background-color: #645fa8;
+  padding: 350px;
+  border-radius: 50px;
+}
+
+/* ================= CONTACT FORM ================= */
+/* Mengatur tampilan dan tata letak form kontak */
+.contact {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #b4b6c6;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  text-align: left;
+  font-family: "Lobster", sans-serif;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: "Lobster", sans-serif;
+}
+.contact label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+  font-family: "Lobster", sans-serif;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.contact button {
+  width: 100%;
+  padding: 10px;
+  background: #e5c40c;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact button:hover {
+  background: #827029;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+/* Mengatur tampilan agar responsif di layar Android/mobile */
+@media (max-width: 600px) {
+  header {
+    padding: 8px;
+  }
+  .profil-image {
+    width: 150px;
+    height: 150px;
+    max-width: 80vw;
+  }
+  .f {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .f img {
+    width: 90vw;
+    max-width: 320px;
+    height: auto;
+  }
+  .contact {
+    max-width: 98vw;
+    padding: 16px 8px;
+  }
+  .contact input,
+  .contact textarea {
+    font-size: 0.95rem;
+    padding: 6px 8px;
+  }
+  .contact button {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+  .am {
+    padding: 0 8px;
+  }
+  .h {
+    padding: 10px;
+  }
+}
+/* ================= HERO SECTION ================= */
+/* Mengatur tampilan hero section */
+nav >ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  gap: 20px;
+  background : black ;
+  font-size: 20px;
+  
+}
+
+nav >ul>li {
+  border: 3px solid rgb(255, 255, 255);
+  padding: 5px;
+  background-color: #908fa3;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.galer {
+  background-color: darkorange;
+  padding: 200px;
+  border-radius: 50px;
+}
+
+.cont {
+  background-color: darkblue;
+  padding: 150px;
+  border-radius: 50px;
+  margin: 5px;
+}
+
